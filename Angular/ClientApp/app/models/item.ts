@@ -1,4 +1,4 @@
-﻿export class Item {
+﻿export class Item implements IItem {
     id: string;
     label: string;
     type: string;
@@ -8,4 +8,10 @@
         this.label = label;
         this.type = type;
     }
+}
+
+export interface IItem {
+    id: string;
+    label: string;
+    type: string;
 }
