@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Database } from "../../providers/database";
 
 @Component({
     selector: 'app',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    constructor(private db: Database) {
+        console.log(this.db.items);
+    }
 }

@@ -23,11 +23,19 @@
   <ItemGroup>
     <None Remove="ClientApp\app\item.ts" />
     <None Remove="ClientApp\app\providers\data.service.ts" />
+    <None Remove="ClientApp\app\providers\database.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\models\item.ts" />
     <TypeScriptCompile Include="ClientApp\app\providers\data.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\providers\database.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="item.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

@@ -1,0 +1,12 @@
+﻿[
+  {
+    "id": 1,
+    "label": "item 1",
+    "type": "Living"
+  },
+  {
+    "id": 2,
+    "label": "item 2",
+    "type": "Dead"
+  }
+]
